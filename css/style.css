@@ -2,6 +2,13 @@
   box-sizing: border-box;
   /* background-color: #2e304b; */
   font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+#sections {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 80px);
 }
 
 .left {
@@ -10,6 +17,18 @@
   padding-top: 60px;
   height: 100%;
   width: 50%;
+}
+
+#right {
+  width: 50%;
+  height: 100%;
+}
+
+#right img {
+  padding-top: 110px;
+  padding-left: 90px;
+  width: 80%;
+  text-align: center;
 }
 
 /*CSS for Nav bar from HERE TO*/
@@ -21,8 +40,11 @@ nav {
   background-color: #ffffff;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
+.body {
+  width: 100%;
+  height: 100vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  background-color: #fff;
 }
 
 li {
@@ -74,8 +96,9 @@ ul {
   font-weight: 300;
 }
 
-.heroImage {
+/* .heroImage {
+  text-align: right;
   padding-left: 50%;
-  height: 30%;
-  width: 20%;
-}
+  height: 300px;
+  width: 400px;
+}  */
