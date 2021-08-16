@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  /* background-color: #2e304b; */
+  font-family: "Poppins", sans-serif;
+}
+
+.left {
+  color: #000000;
+  padding-left: 100px;
+  padding-top: 60px;
+  height: 100%;
+  width: 50%;
+}
+
+/*CSS for Nav bar from HERE TO*/
+nav {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 100px;
+  /* background-color: #2e304b; */
+  background-color: #ffffff;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+li {
+  display: inline;
+  float: right;
+}
+
+li a {
+  display: block;
+  /* color: rgb(52, 241, 169); */
+  color: rgb(241, 52, 156);
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-size: 17px;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+}
+
+ul {
+  background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* HERE */
+
+.bold-text {
+  padding-top: 30px;
+  color: rgb(241, 52, 156);
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.intro-text {
+  padding-top: 30px;
+  padding-right: 100px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.heroImage {
+  padding-left: 50%;
+  height: 30%;
+  width: 20%;
+}
