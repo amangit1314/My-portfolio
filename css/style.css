@@ -1,86 +1,13 @@
 * {
   box-sizing: border-box;
-  /* background-color: #2e304b; */
   font-family: "Poppins", sans-serif;
   color: #000000;
-}
-
-#sections {
-  display: flex;
-  width: 100%;
-  height: calc(100% - 80px);
-}
-
-.left {
-  color: #000000;
-  padding-left: 100px;
-  padding-top: 60px;
-  height: 100%;
-  width: 50%;
-}
-
-#right {
-  width: 50%;
-  height: 100%;
-}
-
-#right img {
-  padding-top: 110px;
-  padding-left: 90px;
-  width: 80%;
-  text-align: center;
-}
-
-/*CSS for Nav bar from HERE TO*/
-nav {
-  position: relative;
-  padding-left: 20px;
-  padding-right: 100px;
-  /* background-color: #2e304b; */
-  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .body {
-  width: 100%;
-  height: 100vh;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-  background-color: #fff;
+  align-items: center;
 }
-
-li {
-  display: inline;
-  float: right;
-}
-
-li a {
-  display: block;
-  /* color: rgb(52, 241, 169); */
-  color: rgb(241, 52, 156);
-  text-align: center;
-  padding: 14px 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-li a:hover {
-  font-size: 17px;
-}
-
-a {
-  display: block;
-  padding: 8px;
-  background-color: transparent;
-}
-
-ul {
-  background-color: transparent;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-/* HERE */
 
 .bold-text {
   padding-top: 30px;
@@ -96,9 +23,128 @@ ul {
   font-weight: 300;
 }
 
-/* .heroImage {
-  text-align: right;
-  padding-left: 50%;
-  height: 300px;
-  width: 400px;
-}  */
+#sections {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+.left {
+  color: #000000;
+  margin-left: 130px;
+  padding-top: 60px;
+  padding-right: 30px;
+  height: 100%;
+  width: 50%;
+}
+
+.workBtn {
+  border-radius: 50px;
+  border: 2px solid rgb(241, 52, 156);
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgb(241, 52, 156);
+  cursor: pointer;
+}
+
+.workBtn:hover {
+  background-color: rgb(241, 52, 156);
+  color: white;
+  cursor: pointer;
+}
+
+#right {
+  width: 50%;
+  height: 100%;
+}
+
+#right img {
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 130px;
+  width: 70%;
+  text-align: center;
+}
+
+h4 {
+  margin-left: 105px;
+  margin-top: 80px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*CSS for Nav bar from HERE TO*/
+nav {
+  text-align: center;
+  display: flex;
+  position: relative;
+  padding-left: 1180px;
+  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  float: right;
+}
+
+ul.social-media-list img {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 36px;
+  height: 36px;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  background-color: #fff;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  text-decoration: none;
+}
+
+li a:hover {
+  font-size: 19px;
+  color: rgb(241, 52, 156);
+  /* color: rgb(52, 241, 169); */
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+}
+
+ul {
+  background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+social-media-list {
+  background-color: black;
+}
+/* HERE */
