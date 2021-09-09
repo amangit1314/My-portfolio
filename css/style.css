@@ -10,7 +10,7 @@
   height: 100vh;
   align-items: center;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-  background-color: #9579FA;
+  background-color: #D53D40;
 }
 
 /* CSS for Nav bar from HERE TO */
@@ -18,18 +18,17 @@ nav {
   text-align: center;
   display: flex;
   position: relative;
-  padding-left: 1180px;
+  padding-left: 1000px;
   padding-right: 100px;
   justify-content: space-between;
-  /* align-items: center; */
   height: 60px;
   color: rgb(255, 255, 255);
-  background-color: #9579FA;
+  background-color: #D53D40;
 }
 
 ul.social-media-list img {
   border-radius: 5px;
-  background-color: #9579FA;
+  background-color: #D53D40;
   width: 100%;
   height: 36px;
 }
@@ -43,19 +42,18 @@ li a {
   display: block;
   color: #ffffff;
   text-align: center;
-  /* padding: 14px 16px; */
-  /* padding-left: 20px; */
   text-decoration: none;
 }
 
 li a:hover {
   font-size: 19px;
-  color: rgb(20, 228, 200)
+  color: rgb(172, 255, 19)
 }
 
 a {
-  display: block;
-  padding: 16px;
+  text-align: center;
+  display: flex;
+  padding: 14px;
   background-color: transparent;
 }
 
@@ -64,7 +62,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 /* Nav bar end's HERE */
 
@@ -95,14 +93,14 @@ ul {
 .intro-text {
   padding-top: 30px;
   padding-right: 100px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
 .workBtn {
   border-radius: 50px;
   border: 2px solid rgb(255, 255, 255);
-  background-color: #9579FA;
+  background-color: #D53D40;
   font-size: 16px;
   font-weight: 500;
   margin-top: 60px;
@@ -112,19 +110,17 @@ ul {
   padding-bottom: 15px;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  box-shadow: 5px 10px #2f2e30;
 }
 
 .workBtn:hover {
-  background-color: #9579FA;
-  color: white;
+  background-color: #ffffff;
+  color: #D53D40;
   cursor: pointer;
-  width: 300px;
 }
 
 h4 {
-  padding-left: 105px;
-  padding-top: 130px;
+  /* padding-left: 105px; */
+  padding-top: 80px;
   font-size: 25px;
   font-weight: 700;
 }
@@ -148,5 +144,14 @@ h4 {
   padding-top: 81px;
   padding-left: 130px;
   font-size: 30px;
-  color: #9579FA;
+  color: #D53D40;
+}
+
+.am-info-text {
+  padding-top: 20px;
+  padding-left: 130px;
+  padding-right: 840px;
+  padding-bottom: 60px;
+  font-size: 17px;
+  font-weight: 300;
 }
