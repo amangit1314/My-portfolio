@@ -10,7 +10,7 @@
 }
 
 body::-webkit-scrollbar {
-  width: .7em;
+  width: .6em;
 }
 
 body::-webkit-scrollbar-track {
@@ -24,21 +24,49 @@ body::-webkit-scrollbar-thumb {
 }
 
 /** CSS for Nav bar from HERE TO */
+.navigation-bar {
+  width: 100%;
+  height: 60px;
+  padding-top: auto;
+  background-color: #FF1BA4;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-right: 620px;
+  margin-left: 130px;
+  border-radius: 50%;
+}
+
+.navigation-bar > a{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.navigation-bar > a :hover {
+  color: #23c587;
+}
 /** Nav bar end's HERE */
 
-/* #sections {
-  display: flex;
-  width: 160%;
-  height: calc(100% - 80px);
-} */
 
 /**left Section start's*/
 .main-area {
   color: #000000;
   padding-top: 50px;
   padding-right: 30px;
+  padding-left: 130px;
   height: 100%;
-  width: 80%;
+  width: 60%;
   border-radius: 0px 0px 50px;
 }
  
@@ -47,12 +75,12 @@ body::-webkit-scrollbar-thumb {
   color: #5F81FA;
   font-weight: 200;
   font-size: 40px;
-  padding-right: 400px;
+  padding-right: 100px;
 }
 
 .intro-text {
   padding-top: 30px;
-  padding-right: 600px;
+  padding-right: 170px;
   font-size: 18px;
   font-weight: 300;
 }
@@ -102,7 +130,35 @@ body::-webkit-scrollbar-thumb {
  
 /**Left section ends here*/
 
+/** Right section start's from here*/
+.main-picture {
+  height: 700px;
+  width: 500px;
+  padding-bottom: 140px;
+  margin-right: 130px;
+}
+/** Right section ends here*/
+
 /** About me section starts here*/
+
+ .sections {
+  display: flex;
+  width: 100%;
+  /* height: calc(100% - 180px); */
+} 
+
+/* .about-me {
+  background-color: brown;
+} */
+.am-img {
+  margin-top: 20px;
+  float: right;
+  display: flex;
+  margin-right: 130px;
+  height: 142px;
+  width: 269px;
+}
+
 .am-txt {
   padding-left: 130px;
   font-size: 30px;
@@ -117,25 +173,23 @@ body::-webkit-scrollbar-thumb {
 .am-info-text {
   padding-top: 20px;
   padding-left: 130px;
-  padding-right: 840px;
+  padding-right: 570px;
   padding-bottom: 81px;
   font-size: 17px;
   font-weight: 300;
 }
 /** About me ends here*/
 
-
-/* Modify the background color */
-.navbar-custom {
-    background-color: #FF1BA4;
-    color: #ffffff;
-}
-
 /** Skills section starts here */
 .skills {
   background-color: #FF1BA4;
-  height: 500px;
+  height: auto;
   width: 100%;
+}
+
+.skills-line {
+  padding-left: 130px;
+  size: .5%;
 }
 
 .skills-txt {
@@ -183,11 +237,11 @@ body::-webkit-scrollbar-thumb {
 /** Projectt's section ends here */
 
 .social-icons {
-  margin-top: 50px;
-  padding-top: 2px;
-  background-color: #FF1BA4;
+  margin-top: 80px;
+  padding-top: 8px;
+  background-color: #ffffff;
   border-radius: 50px 50px 50px 50px;
-  margin-right: 800px;
+  margin-right: 860px;
 }
 
 .social-media-list {
@@ -198,27 +252,29 @@ body::-webkit-scrollbar-thumb {
 li {
   display: block;
   float: left;
+  padding-right: 25px;
 }
 
 li a {
-  display: block;
+  display: inline-block;
   text-align: center;
-}
-
-li a:hover {
-  font-size: 19px;
 }
 
 a {
   text-align: center;
   display: flex;
-  padding: 10px;
   background-color: transparent;
+}
+
+social-img {
+  height: 30px;
+  width: 30px;
 }
 
 ul {
   background-color: transparent;
   list-style-type: none;
   margin: 0;
-  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
