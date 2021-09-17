@@ -182,7 +182,7 @@ body::-webkit-scrollbar-thumb {
 /** About me ends here*/
 
 /** Skills section starts here */
-.skills {
+#skills {
   background-color: #FF1BA4;
   height: auto;
   width: 100%;
@@ -231,6 +231,68 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  height: 0;
+  width: 0;
+  top: -10px;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  content: "80%";
+  right: 0;
+  top: -28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line.HTML span::after{
+  content: "70%";
+}
+
+.progress-line.CSS span::after{
+  content: "40%";
+}
+
+.progress-line.JavaScript span::after{
+  content: "40%";
+}
+
+.progress-line.Java span::after{
+  content: "80%";
+}
+
+.progress-line.Android span::after{
+  content: "70%";
+}
+
+.progress-line.Kotlin span::after{
+  content: "70%";
+}
+
+.progress-line.Flutter span::after{
+  content: "70%";
+}
+
+.progress-line.React span::after{
+  content: "70%";
+}
+
+.progress-line.Node span::after{
+  content: "70%";
+}
+
 .skills-line {
   padding-left: 130px;
   size: .5%;
@@ -245,7 +307,7 @@ body::-webkit-scrollbar-thumb {
 /** Skills section ends here/
 
 /** Projects's section starts here */o
-.projects {
+#projects {
   height: auto;
 }
 
