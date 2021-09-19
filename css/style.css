@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb {
   line-height: 50px;
   color: white;
   text-decoration: none;
-  /* padding-bottom: 5px; */
   text-align: center;
 }
 
@@ -207,6 +206,37 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   width: 100%;
 }
+
+.skills-swiper {
+  width: 800px;
+  height: auto;
+  display: flex;
+  padding-left: 30px;
+}
+
+.card {
+  height: 270px;
+  width: 220px;
+  background-color: #ffffff;
+  /* border-radius: 25px; */
+  padding: 10px;
+  box-shadow: 7px 9px #524e4e;
+}
+
+.card .logo {
+  text-align: center;
+}
+
+.card .title{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #FF1BA4;
+}
+
+.card .description {
+  /* padding: 20px; */
+} */
 /* 
 .skills-bar {
   width: 600px;
