@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Soni</title>
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link 
+      rel="stylesheet" 
+      href="./css/style.css" 
+    />
 
     <link
       rel="stylesheet"
@@ -20,12 +24,13 @@
     />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
   </head>
   <body>
-    <div class="body">
+    <div class="wrapper">
       <nav class="navigation-bar">
           <img class="logo" src="./images/svg/Aman Soni.svg" >
           <a href="/">Home</a>
@@ -73,29 +78,47 @@
       <img class="am-img" src="./images/png/tri.png" >
       </div>
 
+      <div class="sections">
+      <div class="about-me">
+        <div class="am-txt">About Me</div>
+        <img src="./images/png/underline.png" alt="" class="line" />
+        <div class="am-info-text">
+          Myself Aman Soni and I craft beautiful user interfaces and experiences
+          using modern frontend framework's such that Flutter, React and other
+          web technologie's.
+        </div> 
+      </div>
+      <img class="am-img" src="./images/png/tri.png" >
+      </div>
+
       <div id="skills">
         <div class="skills-txt">Skills</div>
-        <img src="./images/png/underline.png" alt="" class="skills-line" />
-        <div class="skills-swiper">
-          
-          <div class="card">
-            <img src="./images/svg/Groupdribble.svg" class="logo">
-            <div class="title">Android Dev.</div>
-            <div class="description">
-              I build android applications using 
-              Kotlin, React Native, Dart and Flutter
-            </div>
+        <img src="./images/png/underline.png" class="skills-line" />
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100" > </div>
           </div>
-
-          <div class="card">
-            <img src="./images/svg/Groupdribble.svg" class="logo">
-            <div class="title">Android Dev.</div>
-            <div class="description">
-              I build android applications using 
-              Kotlin, React Native, Dart and Flutter
-            </div>
+          <div class="carousel-item">
+            <div  class="d-block w-100"> </div>
           </div>
-
+          <div class="carousel-item">
+            <div class="d-block w-100"> </div>
+          </div>
+        </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Previous</span> -->
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Next</span> -->
+          </a>
         </div>
       </div>
 
@@ -104,33 +127,47 @@
         <div class="proj-txt">Projects</div>
         <img src="./images/png/underline.png" class="line" />
 
-        <div class="Title1">Java 450 DSA & Placement Prepration Repo</div>
-        <div class="proj-tile1">
-          In publishing and graphic design, Lorem ipsum is a placeholder text
-          commonly used to demonstrate the visual form of a document or a
-          typeface without relying on meaningful content.
+        <div class="sections">
+          <div class="proj-tile1">
+            <div class="Title1">Java 450 DSA & Placement Prepration Repo</div>
+            <div class="Descrip1">
+              In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content.
+            </div>  
+          </div>
+          <img class="proj-img1" src="./images/png/jobdriver.png" >
         </div>
 
-        <div class="Title2">Portfolio Website</div>
-        <div class="proj-tile2">
-          In publishing and graphic design, Lorem ipsum is a placeholder text
-          commonly used to demonstrate the visual form of a document or a
-          typeface without relying on meaningful content.
+        <div class="sections">
+          <img class="proj-img2" src="./images/png/jobdriver.png" >
+          <div class="proj-tile2">
+            <div class="Title2">Portfolio Website</div>
+            <div class="Descrip2">
+              In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content.
+            </div>
+          </div> 
         </div>
 
-        <div class="Title3">Realtime Chat Application</div>
-        <div class="proj-tile3">
-          In publishing and graphic design, Lorem ipsum is a placeholder text
-          commonly used to demonstrate the visual form of a document or a
-          typeface without relying on meaningful content.
+        <div class="sections">
+          <div class="proj-tile3">
+            <div class="Title3">Realtime Chat Application</div>
+            <div class="Descrip3">
+              In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content.
+            </div>
+          </div>
+          <img class="proj-img1" src="./images/png/jobdriver.png" >
         </div>
       </div>
-
-      <div class="contact">
-        
-      </div>
-
+      
     </div>
     <script src="./js/main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>

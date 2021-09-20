@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.body {
+.wrapper {
   width: 100%;
   height: auto;
 }
@@ -84,6 +84,7 @@ body::-webkit-scrollbar-thumb {
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
+
 .bold-text {
   display: inline-block;
   margin: 0 0.5rem;
@@ -112,12 +113,14 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 15px;
   color: rgb(255, 255, 255);
   cursor: pointer;
+  box-shadow: 1px 1px 1px 1px #c5c1c1;
 }
 
 .workBtn:hover {
   background-color: #ffffff;
-  color: #FF1BA4;
+  color: #5F81FA;
   cursor: pointer;
+  border: #5F81FA 2px solid;
 }
 
 .resumeBtn {
@@ -137,9 +140,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .resumeBtn:hover {
-  color: #ffffff;
-  background-color: #FF1BA4;
+  color: #FF1BA4;
+  background-color: #ffffff;
   cursor: pointer;
+  border: #FF1BA4 2px solid;
 }
  
 /**Left section ends here*/
@@ -205,6 +209,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #FF1BA4;
   height: auto;
   width: 100%;
+  
 }
 
 .skills-swiper {
@@ -218,13 +223,14 @@ body::-webkit-scrollbar-thumb {
   height: 270px;
   width: 220px;
   background-color: #ffffff;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   padding: 10px;
-  box-shadow: 7px 9px #524e4e;
+  box-shadow: 1px 1px 1px 1px #c5c1c1;
+  background-blend-mode: true;
 }
 
 .card .logo {
-  text-align: center;
+  align-items: center;
 }
 
 .card .title{
@@ -233,115 +239,6 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   color: #FF1BA4;
 }
-
-.card .description {
-  /* padding: 20px; */
-} */
-/* 
-.skills-bar {
-  width: 600px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 25px 30px;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
-}
-
-.skills-bar .bar {
-  margin: 20px 0;
-}
-
-.skills-bar .bar:first-child {
-  margin-top: 0px;
-}
-
-.skills-bar .bar .info{
-  margin-bottom: 5px;
-  padding-top: 10px;
-}
-.skills-bar .bar .info span{
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.skills-bar .bar .progress-line {
-  position: relative;
-  height: 10px;
-  width: 100%;
-  background: #f0f0f0;
-  border-radius: 50px;
-  box-shadow: inset 0px 1px 1px rgb(0, 0, 0, 0.5),
-                    0px 1px 1px rgb(255, 255, 255, 0.8);
-}
-
-.bar .progress-line span{
-  height: 100%;
-  width: 80%;
-  background: #6665ee;
-  position: absolute;
-  border-radius: 50px;
-}
-
-.bar .progress-line span::before {
-  position: absolute;
-  content: "";
-  right: 0;
-  height: 0;
-  width: 0;
-  top: -10px;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: #000;
-}
-
-.bar .progress-line span::after {
-  position: absolute;
-  content: "80%";
-  right: 0;
-  top: -28px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  background: #000;
-  padding: 1px 8px;
-  border-radius: 3px;
-}
-
-.progress-line.HTML span::after{
-  content: "70%";
-}
-
-.progress-line.CSS span::after{
-  content: "40%";
-}
-
-.progress-line.JavaScript span::after{
-  content: "40%";
-}
-
-.progress-line.Java span::after{
-  content: "80%";
-}
-
-.progress-line.Android span::after{
-  content: "70%";
-}
-
-.progress-line.Kotlin span::after{
-  content: "70%";
-}
-
-.progress-line.Flutter span::after{
-  content: "70%";
-}
-
-.progress-line.React span::after{
-  content: "70%";
-}
-
-.progress-line.Node span::after{
-  content: "70%";
-} */
 
 .skills-line {
   padding-left: 130px;
@@ -359,6 +256,7 @@ body::-webkit-scrollbar-thumb {
 /** Projects's section starts here */o
 #projects {
   height: auto;
+  width: 1080px;
 }
 
 .proj-txt {
@@ -369,10 +267,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 .proj-tile1 {
-  height: 200px;
+  height: auto;
+  width: auto;
   padding-left: 130px;
   padding-top: 30px;
   padding-right: 855px;
+}
+
+.proj-tile2 {
+  height: auto;
+  width: auto;
+  padding-top: 30px;
+  padding-right: 130px;
+  padding-left: 740px;
+  float: right;
+}
+
+.proj-tile3 {
+  float: left;
+  height: auto;
+  width: auto;
+  padding-left: 130px;
+  padding-top: 30px;
+  padding-right: 855px;
+  margin-bottom: 60px;
 }
 
 .Title1 {
@@ -380,41 +298,51 @@ body::-webkit-scrollbar-thumb {
   padding-top: 30px;
   font-size: 20px;
   font-weight: 600;
-  padding-left: 130px;
+  padding-bottom: 30px;
 }
 
 .Title2 {
+  width: auto;
+  height: auto;
   color: #5F81FA;
   font-size: 20px;
   font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-right: 130px;
   float: right;
 }
 
 .Title3 {
+  height: auto;
+  width: auto;
   color: #5F81FA;
   font-size: 20px;
   font-weight: 600;
-  padding-left: 130px;
   float: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.proj-tile2 {
-  height: 200px;
-  padding-left: 855px;
-  padding-top: 30px;
+.Descrip1 {
+  width: 500px;
+  height: auto;
+}
+
+.proj-img1 {
+  margin-top: 30px;
   padding-right: 130px;
-  float: right;
+  width: 400px;
+  height: 400px;
 }
 
-.proj-tile3 {
-  float: left;
-  height: 200px;
-  padding-left: 130px;
-  padding-top: 30px;
-  padding-right: 855px;
-  margin-bottom: 60px;
+.proj-img2 {
+  margin-top: 30px;
+  margin-left: 130px;
+  width: 400px;
+  height: 400px;
 }
+
 /** Projectt's section ends here */
 
 .social-icons {
