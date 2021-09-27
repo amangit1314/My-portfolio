@@ -221,9 +221,8 @@ body::-webkit-scrollbar-thumb {
 /** Skills section starts here */
 #skills {
   background-color: #FF1BA4;
-  height: auto;
+  height: 500px;
   width: 100%;
-  
 }
 
 .skills-swiper {
@@ -292,6 +291,7 @@ body::-webkit-scrollbar-thumb {
   width: auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 100px;
 }
 
 .proj-tile3 {
@@ -358,8 +358,8 @@ body::-webkit-scrollbar-thumb {
 
 .proj-img2 {
   margin-top: 60px;
-  margin-right: 50px;
-  margin-left: 130px;
+  /* margin-right: 50px;
+  margin-left: 130px; */
   width: 400px;
   height: 200px;
 }
@@ -369,7 +369,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 15px; 
   margin-right: 130px;
   margin-left: 40px;
-  width: 400px;
+  width: 600px;
   height: 200px;
 }
 
